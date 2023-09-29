@@ -2,16 +2,24 @@ pipeline {
     agent any
     stages{
         stage('pull'){
-            echo "hello pull complited"
+            steps{
+                echo "hello pull complited"
+            }
         }
         stage('build'){
-            echo "hello build complited"
+            steps{
+                echo "hello build complited"
+            }
         }
         stage('test'){
-            echo "hellow test comlited"
+             steps{
+                echo "hello test complite"
+             }
         }
         stage('deloy'){
-            echo "hello deploy complited"
+            steps{
+                echo "hello deploy complited"
+             }
         }
     }
 }
